@@ -1,7 +1,9 @@
 \documentclass[12pt]{article}
+\usepackage{natbib}
+\bibliographystyle{agsm}
+\setcitestyle{authoryear,open={(},close={)}}
 
 \title{Essay} 
-
 
 \author
 {Ans Vaessen$^{\ast}$\\
@@ -22,10 +24,13 @@ This is an abstract.
 
 \section*{Introduction}
 
+See \cite{Christensen97}.
+
 \section{Formatting Citations}
 
 \begin{quote}
 hallo
 \end{quote}
 
+\bibliography{biblio}{}
 \end{document}
