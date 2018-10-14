@@ -1,19 +1,19 @@
-\documentclass[12pt]{article}
+\documentclass[a4paper, 11pt]{article}
+
 \usepackage{natbib}
 \bibliographystyle{agsm}
 \setcitestyle{authoryear,open={(},close={)}}
 
-\title{Essay} 
+\input{layout.tex}
 
-\author
-{Ans Vaessen$^{\ast}$\\
-\\
-\normalsize{$^{\ast}$ans@nlgids.london.}\\
-}
+\title{\textbf{Essay}\\Sub title on Essay}
 
-\date{}
+\author{\textsc{Ans Vaessen}
+\\{\textit{ans@nlgids.london}}}
 
-%%%%%%%%%%%%%%%%% START %%%%%%%%%%%%%%%%
+\date{\today}
+
+%%%%%%%%%%%%%%%%% START %%%%%%%%%%%%%%%%%%
 
 \begin{document} 
 \maketitle 
@@ -22,17 +22,25 @@
 This is an abstract.
 \end{abstract}
 
+\vspace{30pt} % Some vertical space between the abstract and first section
+
 \section*{Introduction}
 
 See \cite{Christensen97}.
+See \citep{Christensen97}.
+See \citep[p. 145]{Christensen97}.
 
 Also see this website I found: \cite{TripAdvisor}.
-
-\section{Formatting Citations}
-
+:
 \begin{quote}
 hallo
 \end{quote}
+
+\section{Formatting Citations}
+
+\subsection{This is a subsection}
+
+\section{Another Section}
 
 \bibliography{biblio}{}
 \end{document}
