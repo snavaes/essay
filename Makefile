@@ -8,3 +8,7 @@ essay.pdf: essay.tex
 .PHONY: clean
 clean:
 	rm -f essay.aux essay.aux essay.bbl essay.blg essay.log
+
+.PHONY: count
+count:
+	texcount essay.tex
